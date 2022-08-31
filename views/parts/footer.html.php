@@ -1,5 +1,25 @@
 <footer>
-    <div class="first-row"></div>
+    <div class="first-row">
+        <div class="f-about">
+            <h5>About</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, id minima. Exercitationem modi, veniam alias aspernatur maiores est nemo cum unde recusandae commodi vel atque mollitia dolore impedit, fugit voluptatum.</p>
+        </div>
+        <div class="f-logo-container">
+            <img id="footer-logo" src="<?= assets('img/lasapp-logo.png') ?>" alt="lasapp logo">
+        </div>
+        <div class="f-nsl">
+            <h5>Newsletter</h5>
+            <div class="f-nsl-form">
+                <form action="#" method="post">
+                    <label for="newsletter">10% de réduction sur une commande pour la souscription</label>
+                    <input type="text" placeholder="Votre adresse mail" id="newsletter" name="newsletter">
+                    <button type="submit">Souscrire</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <div class="second-row">
         <div class="f-social">
             <h5>Nos Réseaux</h5>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +10,11 @@
 #desktop{
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
 #datetime{
     padding: 0 5%;
@@ -73,6 +79,7 @@
     display: flex;
     flex-direction: row;
     box-shadow: 0px 5px 5px #343434;
+    background-color: #fff;
     align-items: center;
     justify-content: center;
     padding: 0 2%;
@@ -131,7 +138,60 @@
 
 
 /******************************************* FOOTER ******************************************************/
+/******************************************* FOOTER FIRST ROW ******************************************************/
+footer .first-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr;
+    background-color: #303133;
+    width: 100%;
+    height: 200px;
+    color: #d6d8db;
+    padding: 2% 4%;
+    font-family: 'Asap Condensed', sans-serif;
+}
+footer .first-row .f-about p{
+    text-align: start;
+    font-weight: 400;
+}
+footer .first-row  h5{
+    text-align: start;
+    font-size: 24px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+footer .first-row .f-logo-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+footer .first-row .f-logo-container img{
+    border: 2px solid rgb(234, 193, 29);
+}
+footer .f-nsl-form form input{
+    background-color: #4f5051;
+    border: 2px solid #E1E1E1;
+    color: #E1E1E1;
+    margin-top: 4%;
+    padding: 3%;
+    width: 60%;
+}
+footer .f-nsl-form form input:focus{
+    outline: none;
+}
+footer .f-nsl-form form button{
+    margin-left: 4px;
+    width: 30%;
+    padding: 3%;
+    border-radius: 0%;
+    border: 2px solid #fff;
+    cursor: pointer;
 
+}
+/******************************************* FOOTER NEWSLETTER *******************************************************/
+
+/******************************************* FOOTER SECOND ROW ******************************************************/
 footer .second-row{
     background-color: #28292b;
     color: #fff;
@@ -150,7 +210,7 @@ footer .credit-row{
     background-color: #28292b;
     color: rgb(102, 104, 106);
 }
-footer h5{
+footer .second-row h5{
     font-size: 24px;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 2px;

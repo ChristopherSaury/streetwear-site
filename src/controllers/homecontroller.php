@@ -1,6 +1,6 @@
 <?php
 
 function displayHome(){
-    $title = 'accueil';
+    $title = 'Accueil';
     include view('home.html');
 }

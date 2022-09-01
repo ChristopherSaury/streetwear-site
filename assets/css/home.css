@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
 *{
     margin: 0%;
     padding: 0%;
@@ -66,4 +68,38 @@
     font-size: 25px;
     font-family: 'Homenaje', sans-serif;
     letter-spacing: 4px;
+}
+/*************************************** HOME PURCHASE INFO *********************************************/
+#homeAdd {
+    padding: 6% 8%;
+    width: 100%;
+    height: auto;
+}
+#homeAdd .homePurchase{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+#homeAdd .homePurchase div{
+    display: grid;
+    place-items: center;
+}
+#homeAdd .homePurchase div h3{
+    font-family: 'Concert One', cursive;
+    padding-top: 6%;
+}
+#homeAdd .homePurchase div p{
+    font-family: 'Commissioner', sans-serif;
+    margin-top: 6%;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding: 0 2%;
+    line-height: 25px;
+    font-size: 16px;
+}
+#homeAdd .homePurchase i{
+    color: #79796f;
+    font-size: 40px;
 }

@@ -1,6 +1,6 @@
 <?php
 
 function displayHome(){
-    $title = 'Accueil';
+    $title = 'Lassap - Accueil';
     include view('home.html');
 }

@@ -72,6 +72,17 @@
     color: #343434;
     background-color: #fff;
 }
+#datetime .menu{
+    width: 30px;
+    height: 100%;
+    margin: 2%;
+    display: grid;
+    place-items: center;
+}
+#datetime .menu i{
+    font-size: 22px;
+    cursor: pointer;
+}
 
 #desktop .desk-nav{
     width: 100%;

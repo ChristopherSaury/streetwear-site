@@ -12,4 +12,7 @@ if(empty($route)){
 }elseif($route == 'accueil'){
     require CONTROLLERS_FILES . '/homecontroller.php';
     displayHome();
+}elseif($route == 'inscription'){
+    require CONTROLLERS_FILES . '/userController.php';
+    signUpPage();
 }

@@ -5,7 +5,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, id minima. Exercitationem modi, veniam alias aspernatur maiores est nemo cum unde recusandae commodi vel atque mollitia dolore impedit, fugit voluptatum.</p>
         </div>
         <div class="f-logo-container">
-            <img id="footer-logo" src="<?= assets('img/lasapp-logo.png') ?>" alt="lasapp logo">
+            <img id="footer-logo" src="<?= Functions::assets('img/lasapp-logo.png') ?>" alt="lasapp logo">
         </div>
         <div class="f-nsl">
             <h5>Newsletter</h5>
@@ -33,12 +33,12 @@
     <div class="footer-gallery">
         <h5>Notre Galerie</h5>
             <div class="gallery-container">
-                <div class="gallery"><a href="<?php echo assets('footer-gallery/clothes-gallery2.jpg') ?>" data-lightbox="footer-gallery"><img src="<?php echo assets('footer-gallery/clothes-gallery2.jpg') ?>" alt="Mannequin vêtement femme"></a></div>
-                <div class="gallery"><a href="<?php echo assets('footer-gallery/clothes-gallery1.jpg') ?>"><img src="<?php echo assets('footer-gallery/clothes-gallery1.jpg') ?>" alt="Mannequin vêtement femme"></a></div>
-                <div class="gallery"><a href="<?php echo assets('footer-gallery/clothes-gallery3.jpg') ?>"><img src="<?php echo assets('footer-gallery/clothes-gallery3.jpg') ?>" alt="Mannequin vêtement homme"></a></div>
-                <div class="gallery"><a href="<?php echo assets('footer-gallery/shoes-gallery1.jpg') ?>"><img src="<?php echo assets('footer-gallery/shoes-gallery1.jpg') ?>" alt="Chaussures Nike"></a></div>
-                <div class="gallery"><a href="<?php echo assets('footer-gallery/shoes-gallery2.jpg') ?>"><img src="<?php echo assets('footer-gallery/shoes-gallery2.jpg') ?>" alt="Chaussures Nike"></a></div>
-                <div class="gallery"><a href="<?php echo assets('footer-gallery/shoes-gallery3.jpg') ?>"><img src="<?php echo assets('footer-gallery/shoes-gallery3.jpg') ?>" alt="Chaussures Nike"></a></div>
+                <div class="gallery"><a href="<?php echo Functions::assets('footer-gallery/clothes-gallery2.jpg') ?>" data-lightbox="footer-gallery"><img src="<?php echo Functions::assets('footer-gallery/clothes-gallery2.jpg') ?>" alt="Mannequin vêtement femme"></a></div>
+                <div class="gallery"><a href="<?php echo Functions::assets('footer-gallery/clothes-gallery1.jpg') ?>"><img src="<?php echo Functions::assets('footer-gallery/clothes-gallery1.jpg') ?>" alt="Mannequin vêtement femme"></a></div>
+                <div class="gallery"><a href="<?php echo Functions::assets('footer-gallery/clothes-gallery3.jpg') ?>"><img src="<?php echo Functions::assets('footer-gallery/clothes-gallery3.jpg') ?>" alt="Mannequin vêtement homme"></a></div>
+                <div class="gallery"><a href="<?php echo Functions::assets('footer-gallery/shoes-gallery1.jpg') ?>"><img src="<?php echo Functions::assets('footer-gallery/shoes-gallery1.jpg') ?>" alt="Chaussures Nike"></a></div>
+                <div class="gallery"><a href="<?php echo Functions::assets('footer-gallery/shoes-gallery2.jpg') ?>"><img src="<?php echo Functions::assets('footer-gallery/shoes-gallery2.jpg') ?>" alt="Chaussures Nike"></a></div>
+                <div class="gallery"><a href="<?php echo Functions::assets('footer-gallery/shoes-gallery3.jpg') ?>"><img src="<?php echo Functions::assets('footer-gallery/shoes-gallery3.jpg') ?>" alt="Chaussures Nike"></a></div>
             </div>
     </div>
     <div id="modal" class="modal">
@@ -82,6 +82,6 @@
         <p style="text-align: center;">Projet d'exposition sans vocation commerciale</p>
     </div>
 </footer>
-<script src="<?= assets('js/function.js') ?>"></script>
+<script src="<?= Functions::assets('js/function.js') ?>"></script>
 </body>
 </html>

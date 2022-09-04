@@ -1,10 +1,10 @@
-<?php include view('parts/header.html'); ?>
+<?php include Functions::view('parts/header.html'); ?>
 <style>
 .container .a-shoes-link{
     position: relative;
     width: 50%;
     height: 100%;
-    background-image: url('<?php echo assets('img/shoes.jpg') ?>');
+    background-image: url('<?php echo Functions::assets('img/shoes.jpg') ?>');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -14,7 +14,7 @@
     position: relative;
     width: 50%;
     height: 100%;
-    background-image: url('<?php echo assets('img/clothes.jpg') ?>');
+    background-image: url('<?php echo Functions::assets('img/clothes.jpg') ?>');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -58,4 +58,4 @@
 
 
 
-<?php include view('parts/footer.html'); ?>
+<?php include Functions::view('parts/footer.html'); ?>

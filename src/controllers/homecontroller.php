@@ -2,5 +2,5 @@
 
 function displayHome(){
     $title = 'Lassap - Accueil';
-    include view('home.html');
+    include Functions::view('home.html');
 }

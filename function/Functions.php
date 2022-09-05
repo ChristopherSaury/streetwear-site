@@ -21,13 +21,6 @@ class Functions {
     }
 
     public static function redirection(string $route) {
-        return header("location" . Config::BASE_URL . '/index.php?route=' . $route );
-    }
-
-    public static function entrySafety($entry){
-        $entry = trim($entry);
-        $entry = htmlspecialchars($entry);
-        echo $entry;
-        
+        return header("location:" . Config::BASE_URL . '/index.php?route=' . $route );
     }
 }

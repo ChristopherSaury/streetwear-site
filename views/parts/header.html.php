@@ -15,7 +15,10 @@
         <link rel="stylesheet" href="<?= Functions::assets('css/home.css'); ?>">
     <?php }elseif($_GET['route'] === 'inscription') { ?>
         <link rel="stylesheet" href="<?= Functions::assets('css/signup.css'); ?>">
+    <?php }else{ ?>
+        <link rel="stylesheet" href="<?= Functions::assets('css/home.css'); ?>">
     <?php } ?>
+    
         
    
     

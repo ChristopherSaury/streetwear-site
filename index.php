@@ -14,8 +14,10 @@ if(empty($route)){
     displayHome();
 }elseif($route === 'inscription'){
     require Config::CONTROLLERS_FILES . '/userController.php';
-    signUpPage();
+    $page = new UserController();
+    $page->signUpPage();
 }elseif($route === 'inscription/handler'){
     require Config::CONTROLLERS_FILES . '/userController.php';
-    creatUser_handler();
+    $create = new UserController();
+    $create->creatUser_handler();
 }

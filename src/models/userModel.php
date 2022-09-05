@@ -1,35 +1,39 @@
 <?php
 
-function insertUser($mail,$password,$lastname,$firstname,$country,$address, $building_floor = null,$city,$postcode,$phone,$birth_date){
-    $db = Functions::connection();
-    $request = "INSERT INTO user (
-            mail,
-            password,
-            lastname,
-            firstname,
-            country,
-            address,
-            building_floor,
-            city,
-            postcode,
-            phone,
-            birth_date
-            ) VALUES ( ?,?,?,?,?,?,?,?,?,?,?)";
+require_once Config::MODELS_FILE . '/Model.php';
 
-    $response = $db->prepare($request);
-    $response->execute(array(
-        $mail,
-        $password,
-        $lastname,
-        $firstname,
-        $country,
-        $address,
-        $building_floor,
-        $city,
-        $postcode,
-        $phone,
-        $birth_date
-    ));
-    if(!$response) echo "error 500";
+
+class UserModel extends Model{
+
+    public function insertUser($email_address,$password,$lastname,$firstname,$country,$address, $building_floor = null,$city,$postcode,$phone,$birth_date){
+        $request = "INSERT INTO `user` (
+                email_address,
+                password,
+                lastname,
+                firstname,
+                country,
+                address,
+                building_floor,
+                city,
+                postcode,
+                phone,
+                birth_date
+                ) VALUES ( ?,?,?,?,?,?,?,?,?,?,?)";
     
+        $response = $this->prepareAndExecute($request , array(
+            $email_address,
+            $password,
+            $lastname,
+            $firstname,
+            $country,
+            $address,
+            $building_floor,
+            $city,
+            $postcode,
+            $phone,
+            $birth_date
+        ));
+        if(!$response) echo "user model";
+        
+    }
 }

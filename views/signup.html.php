@@ -18,8 +18,8 @@
 
             <div class="first-row">
                 <div class="mail-input">
-                    <label for="mail">Email</label>
-                    <input type="email" id="mail" name="mail" placeholder="Votre Email">
+                    <label for="email_address">Email</label>
+                    <input type="email" id="email_address" name="email_address" placeholder="Votre Email">
                 </div>
             </div>
 

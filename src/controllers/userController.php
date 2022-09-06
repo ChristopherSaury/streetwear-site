@@ -5,7 +5,15 @@ require_once Config::MODELS_FILE . '/Model.php';
 class UserController extends Model{
 
     public function signUpPage(){
+        include Config::MODELS_FILE . '/CountryModel.php';
         $title = 'Lassap - Inscription';
+         $countryModel = new CountryModel();
+         $african_continent = $countryModel->getAfricanCountry();
+         $american_continent = $countryModel->getAmericanCountry();
+         $asian_continent = $countryModel->getAsianCountry();
+         $european_continent = $countryModel->getEuropeanCountry();
+         $oceanian_continent = $countryModel->getOceanianCountry();
+        
         include Functions::view('signup.html');
     }
     

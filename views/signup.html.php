@@ -18,43 +18,70 @@
 
             <div class="first-row">
                 <div class="mail-input">
-                    <label for="email_address">Email</label>
+                    <label for="email_address">Email*</label>
                     <input type="email" id="email_address" name="email_address" placeholder="Votre Email">
                 </div>
             </div>
 
             <div class="second-row">
                 <div class="password-input">
-                    <label for="password">Mot de Passe</label>
+                    <label for="password">Mot de Passe*</label>
                     <input type="password" id="password" name="password" placeholder="Votre mot de passe">
                 </div>
                 <div class="password2-input">
-                    <label for="password2">Confirmation Mot de Passe</label>
+                    <label for="password2">Confirmer Mot de Passe*</label>
                     <input type="password" id="password2" name="password2" placeholder="Confirmer votre mot de passe">
                 </div>
             </div>
 
             <div class="third-row">
                 <div class="lastname-input">
-                    <label for="lastname">Nom</label>
+                    <label for="lastname">Nom*</label>
                     <input type="text" id="lastname" name="lastname" placeholder="Votre nom">
                 </div>
                 <div class="firstname-input">
-                    <label for="firstname">Prénom</label>
+                    <label for="firstname">Prénom*</label>
                     <input type="text" id="firstname" name="firstname" placeholder="Votre prénom">
                 </div>
             </div>
 
             <div class="fourth-row">
                 <div class="country-input">
-                    <label for="country">Pays</label>
-                    <input type="text" id="country" name="country" placeholder="Pays de résidence">
+                    <label for="country">Pays*</label>
+                    <select name="country" id="country">
+                        <option value="">--Pays de résidence--</option>
+                        <option value="" disabled>Afrique</option>
+                        <?php foreach($african_continent as $africa_country): ?>
+                            <option value="<?php echo $africa_country->id ?>"><?php echo $africa_country->name ?></option>
+                        <?php endforeach; ?>
+
+                        <option value="" disabled>Amérique</option>
+                        <?php foreach($american_continent as $america_country): ?>
+                            <option value="<?php echo $america_country->id ?>"><?php echo $america_country->name ?></option>
+                        <?php endforeach; ?>
+
+                        <option value="" disabled>Asie</option>
+                        <?php foreach($asian_continent as $asia_country): ?>
+                            <option value="<?php echo $asia_country->id ?>"><?php echo $asia_country->name ?></option>
+                        <?php endforeach; ?>
+                        
+                        <option value="" disabled>Europe</option>
+                        <?php foreach($european_continent as $europe_country): ?>
+                            <option value="<?php echo $europe_country->id ?>"><?php echo $europe_country->name ?></option>
+                        <?php endforeach; ?>
+
+                        <option value="" disabled>Océanie</option>
+                        <?php foreach($oceanian_continent as $oceania_country): ?>
+                            <option value="<?php echo $oceania_country->id ?>"><?php echo $oceania_country->name ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                    
                 </div>
             </div>
 
             <div class="fifth-row">
                 <div class="address-input">
-                    <label for="address">Adresse</label>
+                    <label for="address">Adresse*</label>
                     <input type="text" id="address" name="address" placeholder="Votre adresse">
                 </div>
             </div>
@@ -68,22 +95,22 @@
 
             <div class="seventh-row">
                 <div class="city-input">
-                    <label for="city">Ville</label>
+                    <label for="city">Ville*</label>
                     <input type="text" id="city" name="city" placeholder="Ville">
                 </div>
                 <div class="postcode-input">
-                    <label for="postcode">Code Postal</label>
+                    <label for="postcode">Code Postal*</label>
                     <input type="number" id="postcode" name="postcode" placeholder="Votre code postal">
                 </div>
             </div>
 
             <div class="eighth-row">
                 <div class="phone-input">
-                    <label for="phone">Téléphone</label>
+                    <label for="phone">Téléphone*</label>
                     <input type="number" id="phone" name="phone" placeholder="Votre numéro de téléphone">
                 </div>
                 <div class="birth-input">
-                <label for="birth_date">Date de naissance</label>
+                <label for="birth_date">Date de naissance*</label>
                     <input type="date" id="birth_date" name="birth_date" placeholder="Votre date de naissance">
                 </div>
             </div>

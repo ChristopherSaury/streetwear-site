@@ -7,17 +7,19 @@ if(isset($_GET['route'])){
 }
 
 if(empty($route)){
-    require Config::CONTROLLERS_FILES . '/homecontroller.php';
-    displayHome();
+    require Config::CONTROLLERS_FILES . '/Homecontroller.php';
+    $page = new HomeController();
+    $page->displayHome();
 }elseif($route === 'accueil'){
-    require Config::CONTROLLERS_FILES . '/homecontroller.php';
-    displayHome();
+    require Config::CONTROLLERS_FILES . '/Homecontroller.php';
+    $page = new HomeController();
+    $page->displayHome();
 }elseif($route === 'inscription'){
-    require Config::CONTROLLERS_FILES . '/userController.php';
+    require Config::CONTROLLERS_FILES . '/UserController.php';
     $page = new UserController();
     $page->signUpPage();
 }elseif($route === 'inscription/handler'){
-    require Config::CONTROLLERS_FILES . '/userController.php';
+    require Config::CONTROLLERS_FILES . '/UserController.php';
     $create = new UserController();
     $create->creatUser_handler();
 }

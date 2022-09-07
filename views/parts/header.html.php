@@ -55,8 +55,8 @@
         <div class="link-one">
             <ul>
                 <li><a href="<?= Functions::url('accueil') ?>">Accueil</a></li>
-                <li><a href="#">A propos</a></li>
                 <li><a href="#">Chaussures</a></li>
+                <li><a href="#">Vêtements</a></li>
             </ul>
         </div>
         <div class="logo-container">
@@ -66,7 +66,7 @@
         </div>
         <div class="link-two">
         <ul>
-                <li><a href="#">Vêtements</a></li>
+                <li><a href="#">A propos</a></li>
                 <li><a href="<?= Functions::url('inscription') ?>">Inscription</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>

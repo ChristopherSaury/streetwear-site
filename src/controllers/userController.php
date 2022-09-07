@@ -28,6 +28,8 @@ class UserController extends Model{
         && !empty($_POST['building_floor']) || $_POST['building_floor'] == null ){
     
         include Config::MODELS_FILE . '/userModel.php';
+
+        $_POST['password'] = password_hash($_POST['password'], PASSWORD_BCRYPT);
     
         $insert_user = new UserModel;
         $insert_user->insertUser($_POST['email_address'], $_POST['password'], $_POST['lastname'], $_POST['firstname'], $_POST['country'], $_POST['address'] , $_POST['building_floor'], $_POST['city'], $_POST['postcode'], $_POST['phone'], $_POST['birth_date']);

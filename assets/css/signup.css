@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 #signup{
     margin-top: 110px;
     width: 100%;
@@ -9,16 +10,37 @@
 }
 #signup .signup-form{
     width: 100%;
-    height: 100%;
+    height: 140vh;
     display: grid;
     justify-content: center;
 }
 #signup .signup-form form {
-    margin-top: 20%;
+    margin-top: 1%;
     padding: 5%;
-    width: 100%;
+    width: 600px;
     height: auto;
 }
+#signup .signup-form form label{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 14px;
+}
+#signup .signup-form form input,
+#signup .signup-form form select{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 12px;
+    padding: 8px 8px;
+    border-radius: 0;
+    border: 1px solid #000;
+}
+#signup .signup-form form .continent-option{
+    font-size: 14px;
+    background-color: rgb(215, 210, 210);
+}
+#signup .signup-form form input:focus,
+#signup .signup-form form select:focus{
+    outline-color: transparent;
+}
+
 #signup .signup-form form h1,
 #signup .signup-form form h2{
     font-family: 'Anton', sans-serif;
@@ -32,7 +54,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    gap: 10px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
 
 #signup .signup-form form .first-row div,
 #signup .signup-form form .second-row div,
@@ -46,5 +77,49 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     width: 100%;
+    height: 70px;
+    align-items: center;
+}
+
+#signup .signup-form form .btn-wrapper{
+    width: 100%;
+    height: 100px;
+}
+#signup .signup-form form .btn-wrapper button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    background-color: #28292b;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#signup .signup-form form .btn-wrapper button:hover{
+    background-color: #3e3e3e;
+}
+#signup .signup-form form .btn-wrapper .use-terms-wrapper{
+    margin-top: 2%;
+}
+#signup .signup-form form .btn-wrapper .login-link{
+    width: 100%;
     height: auto;
 }
+#signup .signup-form form .btn-wrapper .login-link p{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 2px;
+}
+#signup .signup-form form .btn-wrapper .login-link p a{
+    text-decoration: underline;
+    color: blue;
+}
+

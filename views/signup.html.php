@@ -50,27 +50,27 @@
                     <label for="country">Pays*</label>
                     <select name="country" id="country">
                         <option value="">--Pays de résidence--</option>
-                        <option value="" disabled>Afrique</option>
+                        <option class="continent-option" value="" disabled>Afrique</option>
                         <?php foreach($african_continent as $africa_country): ?>
                             <option value="<?php echo $africa_country->id ?>"><?php echo $africa_country->name ?></option>
                         <?php endforeach; ?>
 
-                        <option value="" disabled>Amérique</option>
+                        <option class="continent-option" value="" disabled>Amérique</option>
                         <?php foreach($american_continent as $america_country): ?>
                             <option value="<?php echo $america_country->id ?>"><?php echo $america_country->name ?></option>
                         <?php endforeach; ?>
 
-                        <option value="" disabled>Asie</option>
+                        <option class="continent-option" value="" disabled>Asie</option>
                         <?php foreach($asian_continent as $asia_country): ?>
                             <option value="<?php echo $asia_country->id ?>"><?php echo $asia_country->name ?></option>
                         <?php endforeach; ?>
                         
-                        <option value="" disabled>Europe</option>
+                        <option class="continent-option" value="" disabled>Europe</option>
                         <?php foreach($european_continent as $europe_country): ?>
                             <option value="<?php echo $europe_country->id ?>"><?php echo $europe_country->name ?></option>
                         <?php endforeach; ?>
 
-                        <option value="" disabled>Océanie</option>
+                        <option class="continent-option" value="" disabled>Océanie</option>
                         <?php foreach($oceanian_continent as $oceania_country): ?>
                             <option value="<?php echo $oceania_country->id ?>"><?php echo $oceania_country->name ?></option>
                         <?php endforeach; ?>
@@ -116,6 +116,14 @@
             </div>
             <div class="btn-wrapper">
                 <button type="submit">Terminer</button>
+                <div class="use-terms-wrapper">
+                    <input type="checkbox" name="" id="">
+                    <label for="">J'ai lu et j'accepte les condition d'utilisation de mes données personnelles.</label>
+                </div>
+                <div class="login-link">
+                  <p>Vous avez déja un compte ? <a href="#">Connectez-vous</a></p>
+                </div>
+
             </div>
         </form>
     </div>

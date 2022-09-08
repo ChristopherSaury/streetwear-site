@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 #signup{
     margin-top: 110px;
     width: 100%;
@@ -43,6 +41,7 @@
 
 #signup .signup-form form h1,
 #signup .signup-form form h2{
+    font-size: 30px;
     font-family: 'Anton', sans-serif;
     text-align: center;
 }

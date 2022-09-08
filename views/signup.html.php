@@ -121,7 +121,7 @@
                     <label for="">J'ai lu et j'accepte les condition d'utilisation de mes données personnelles.</label>
                 </div>
                 <div class="login-link">
-                  <p>Vous avez déja un compte ? <a href="#">Connectez-vous</a></p>
+                  <p>Vous avez déja un compte ? <a href="<?= Functions::url('connexion'); ?>">Connectez-vous</a></p>
                 </div>
 
             </div>

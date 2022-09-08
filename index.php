@@ -22,4 +22,8 @@ if(empty($route)){
     require Config::CONTROLLERS_FILES . '/UserController.php';
     $create = new UserController();
     $create->creatUser_handler();
+}elseif($route === 'connexion'){
+    require Config::CONTROLLERS_FILES . '/LoginController.php';
+    $page = new LoginController();
+    $page->loginPage();
 }

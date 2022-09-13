@@ -1,4 +1,5 @@
 <?php
+require_once Config::MODELS_FILE . '/Model.php';
 
 class CountryModel extends Model{
     public function getAfricanCountry(){

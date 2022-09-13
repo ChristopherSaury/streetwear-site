@@ -48,9 +48,11 @@
             <div class="social-container"><i class="fa-brands fa-youtube"></i></div>
             <div class="social-container"><i class="fa-brands fa-instagram"></i></div>
         </div>
+        <?php if(isset($_SESSION['firstname'])):?>
         <div class="menu">
             <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
         </div>
+        <?php endif; ?>
     </div>
 
     <div class="desk-nav">
@@ -73,5 +75,14 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
+    </div>
+
+    <div class="shoes-shop-link">
+        <ul>
+            <li><a href="#">Casquette</a></li>
+            <li><a href="#">T-shirt</a></li>
+            <li><a href="#">Jeans</a></li>
+            <li><a href="#">Sweatshirt</a></li>
+        </ul>
     </div>
 </nav>

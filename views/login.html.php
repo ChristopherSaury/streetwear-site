@@ -10,7 +10,7 @@
 </style>
 <section id="login">
     <div class="login-form">
-        <form action="#" method="POST">
+        <form action="<?= Functions::url('connexion/handler'); ?>" method="POST">
             <h1>Connectez-vous sur Lassap.com</h1>
             <div class="input-container">
                 <div class="login-email">

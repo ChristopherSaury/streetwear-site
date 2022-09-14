@@ -59,8 +59,8 @@
         <div class="link-one">
             <ul>
                 <li><a href="<?= Functions::url('accueil') ?>">Accueil</a></li>
-                <li><a href="#">Chaussures</a></li>
-                <li><a href="#">Vêtements</a></li>
+                <li><a onmouseover="optLinkShoes()">Chaussures</a></li>
+                <li><a onmouseover="optLinkClothes()">Vêtements</a></li>
             </ul>
         </div>
         <div class="logo-container">
@@ -77,12 +77,106 @@
         </div>
     </div>
 
-    <div class="shoes-shop-link">
-        <ul>
-            <li><a href="#">Casquette</a></li>
-            <li><a href="#">T-shirt</a></li>
-            <li><a href="#">Jeans</a></li>
-            <li><a href="#">Sweatshirt</a></li>
-        </ul>
+    <div class="clothes-shop-link" onmouseover="optLinkClothes()" onmouseout="closeOptLinkClothes()">
+        <div class="additionnals-links">
+
+            <div class="standard-options">
+                <ul>
+                    <li><a href="#">Femmes</a></li>
+                    <li><a href="#">Hommes</a></li>
+                    <li><a href="#">Nouveauté</a></li>
+                </ul>
+            </div>
+            <div class="categories">
+                <h4>Catégories</h4>
+                <ul>
+                    <li><a href="#">Casquette</a></li>
+                    <li><a href="#">T-shirt</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Sweatshirt</a></li>
+                </ul>
+            </div>
+            <div class="collections">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="#">Automne 2022</a></li>
+                    <li><a href="#">Printemps / Été 2022</a></li>
+                    <li><a href="#">Hivers 2022</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="collections-links">
+            <div class="img-content">
+                <a href="#">
+                    <img src="<?= Functions::assets("img/spring-2022.jpg") ?>" alt="">
+                    <h5>Printemps 2022</h5>
+                </a>
+            </div>
+            <div class="img-content">
+                <a href="#">
+                    <img src="<?= Functions::assets("img/summer-2022.jpg") ?>" alt="">
+                    <h5>Été 2022</h5>
+                </a>
+            </div>
+            <div class="img-content">
+                <a href="#">
+                    <img src="<?= Functions::assets("img/winter-2022.jpg") ?>" alt="">
+                    <h5>Hivers 2022</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shoes-shop-link" onmouseover="optLinkShoes()" onmouseout="closeOptLinkShoes()">
+        <div class="additionnals-links">
+
+            <div class="standard-options">
+                <ul>
+                    <li><a href="#">Femmes</a></li>
+                    <li><a href="#">Hommes</a></li>
+                    <li><a href="#">Nouveauté</a></li>
+                </ul>
+            </div>
+            <div class="men-categories">
+                <h4>Hommes</h4>
+                <ul>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Chaussures de sport</a></li>
+                    <li><a href="#">Boots & Bottines</a></li>
+                    <li><a href="#">Chaussures de ville</a></li>
+                </ul>
+            </div>
+            <div class="women-categories">
+                <h4>Femmes</h4>
+                <ul>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Chaussures de sport</a></li>
+                    <li><a href="#">Bottines</a></li>
+                    <li><a href="#">Escarpins</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="collections-links">
+            <div class="img-content">
+                <a href="#">
+                    <img src="<?= Functions::assets("img/men-shoes.jpg") ?>" alt="">
+                    <h5>Chaussures de ville</h5>
+                </a>
+            </div>
+            <div class="img-content">
+                <a href="#">
+                    <img src="<?= Functions::assets("img/slingbacks.jpg") ?>" alt="">
+                    <h5>Escarpins</h5>
+                </a>
+            </div>
+            <div class="img-content">
+                <a href="#">
+                    <img src="<?= Functions::assets("img/boots.jpg") ?>" alt="">
+                    <h5>Bottines</h5>
+                </a>
+            </div>
+        </div>
     </div>
 </nav>

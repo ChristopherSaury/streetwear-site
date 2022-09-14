@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 /************************* SIGNUP & LOGIN ***************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
@@ -96,6 +98,7 @@
     align-items: center;
 }
 #desktop .desk-nav ul, a{
+    cursor: pointer;
     list-style-type: none;
     text-decoration: none;
     color: #000;
@@ -133,6 +136,137 @@
     display: flex;
     justify-content: flex-start;
 }
+/********************************** NAVBAR OPTIONS LINKS *****************************************************/
+/********************************** CLOTHES LINK *************************************************************/
+#desktop .clothes-shop-link{
+    width: 100%;
+    height: 270px;
+    background-color: #f2f2f1;
+    display: none;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 5%;
+}
+#desktop .clothes-shop-link .additionnals-links{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 50px;
+}
+#desktop .clothes-shop-link .additionnals-links .standard-options{
+    margin-top: 24px;
+}
+#desktop .clothes-shop-link ul{
+    list-style-type: none;
+    white-space: nowrap;
+    width: 100%;
+    height: 100px;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+#desktop .clothes-shop-link ul a:hover{
+    text-decoration: underline;
+}
+#desktop .clothes-shop-link h4{
+    margin-bottom: 6px;
+    font-family: 'PT Sans', sans-serif;
+}
+#desktop .clothes-shop-link .collections-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: flex-end;
+    gap: 20px;
+}
+#desktop .clothes-shop-link .collections-links .img-content{
+    width: 200px;
+    height: 250px;
+}
+#desktop .clothes-shop-link .collections-links .img-content a{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#desktop .clothes-shop-link .collections-links .img-content a h5{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+}
+#desktop .clothes-shop-link .collections-links img{
+    width: 200px;
+    height: 220px;
+}
+/*************************************** SHOES LINK ********************************************************/
+#desktop .shoes-shop-link{
+    width: 100%;
+    height: 270px;
+    background-color: #f2f2f1;
+    display: none;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 5%;
+}
+#desktop .shoes-shop-link .additionnals-links{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 50px;
+}
+#desktop .shoes-shop-link .additionnals-links .standard-options{
+    margin-top: 24px;
+}
+#desktop .shoes-shop-link ul{
+    list-style-type: none;
+    white-space: nowrap;
+    width: 100%;
+    height: 100px;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+#desktop .shoes-shop-link ul a:hover{
+    text-decoration: underline;
+}
+#desktop .shoes-shop-link h4{
+    margin-bottom: 6px;
+    font-family: 'PT Sans', sans-serif;
+}
+#desktop .shoes-shop-link .collections-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: flex-end;
+    gap: 20px;
+}
+#desktop .shoes-shop-link .collections-links .img-content{
+    width: 200px;
+    height: 250px;
+}
+#desktop .shoes-shop-link .collections-links .img-content a{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#desktop .shoes-shop-link .collections-links .img-content a h5{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+}
+#desktop .shoes-shop-link .collections-links img{
+    width: 200px;
+    height: 220px;
+}
+
+
+
+
+
+
 
 
 /******************************************* FOOTER ******************************************************/

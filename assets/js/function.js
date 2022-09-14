@@ -1,3 +1,24 @@
+//NAVBAR OPTIONNAL LINK
+let clothesLink = document.querySelector('.clothes-shop-link');
+let shoesLink = document.querySelector('.shoes-shop-link');
+
+// CLOTHES LINK
+const optLinkClothes = () =>{
+    shoesLink.style.display = "none";
+    clothesLink.style.display = "grid";
+}
+const closeOptLinkClothes = () =>{
+    clothesLink.style.display = "none";
+}
+// SHOES LINK
+const optLinkShoes = () =>{
+    clothesLink.style.display = "none";
+    shoesLink.style.display = "grid";
+}
+const closeOptLinkShoes = () =>{
+    shoesLink.style.display = "none";
+}
+
 // DATE FOOTER  
 let yearData = document.getElementById('currentYear');
 let currentYear = new Date().getFullYear();
